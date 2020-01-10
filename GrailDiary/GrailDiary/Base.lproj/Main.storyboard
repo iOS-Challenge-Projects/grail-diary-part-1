@@ -93,14 +93,65 @@
                     <view key="view" contentMode="scaleToFill" id="6eY-7E-iUk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7c-If-ORj">
+                                <rect key="frame" x="279" y="160" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbd-dl-RaN">
+                                <rect key="frame" x="332.5" y="189" width="61.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emi-gF-CxM">
+                                <rect key="frame" x="20" y="350" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cr-img" translatesAutoresizingMaskIntoConstraints="NO" id="gR6-qP-l44">
+                                <rect key="frame" x="20" y="160" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gR6-qP-l44" secondAttribute="height" multiplier="1:1" id="ZSa-8h-yKv"/>
+                                    <constraint firstAttribute="width" constant="150" id="tUE-vj-6ti"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qgH-to-rmw">
+                                <rect key="frame" x="20" y="379" width="374" height="463"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Pbd-dl-RaN" firstAttribute="top" secondItem="w7c-If-ORj" secondAttribute="bottom" constant="8" id="5fu-T8-YEr"/>
+                            <constraint firstItem="qgH-to-rmw" firstAttribute="leading" secondItem="emi-gF-CxM" secondAttribute="leading" id="JQk-76-NaW"/>
+                            <constraint firstItem="Pbd-dl-RaN" firstAttribute="trailing" secondItem="w7c-If-ORj" secondAttribute="trailing" id="PAP-Vb-mMz"/>
+                            <constraint firstItem="qgH-to-rmw" firstAttribute="top" secondItem="emi-gF-CxM" secondAttribute="bottom" constant="8" id="V18-1o-XoG"/>
+                            <constraint firstItem="Pbd-dl-RaN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gR6-qP-l44" secondAttribute="trailing" constant="8" id="X3S-n7-5uB"/>
+                            <constraint firstItem="w7c-If-ORj" firstAttribute="top" secondItem="gR6-qP-l44" secondAttribute="top" id="Z2P-p5-mGs"/>
+                            <constraint firstItem="qgH-to-rmw" firstAttribute="trailing" secondItem="Pbd-dl-RaN" secondAttribute="trailing" id="ha7-X5-Ssy"/>
+                            <constraint firstItem="emi-gF-CxM" firstAttribute="top" secondItem="gR6-qP-l44" secondAttribute="bottom" constant="40" id="jsM-nX-ke4"/>
+                            <constraint firstItem="emi-gF-CxM" firstAttribute="leading" secondItem="gR6-qP-l44" secondAttribute="leading" id="lyi-BW-2tn"/>
+                            <constraint firstItem="Gdz-4x-CK2" firstAttribute="trailing" secondItem="w7c-If-ORj" secondAttribute="trailing" constant="20" id="mm7-S3-JXF"/>
+                            <constraint firstItem="Gdz-4x-CK2" firstAttribute="bottom" secondItem="qgH-to-rmw" secondAttribute="bottom" constant="20" id="p0v-YE-S2x"/>
+                            <constraint firstItem="w7c-If-ORj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gR6-qP-l44" secondAttribute="trailing" constant="8" id="qUA-yF-BFV"/>
+                            <constraint firstItem="w7c-If-ORj" firstAttribute="top" secondItem="Gdz-4x-CK2" secondAttribute="top" constant="20" id="uLM-t1-DIn"/>
+                            <constraint firstItem="gR6-qP-l44" firstAttribute="leading" secondItem="Gdz-4x-CK2" secondAttribute="leading" constant="20" id="whz-EW-4v9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Gdz-4x-CK2"/>
                     </view>
                     <navigationItem key="navigationItem" id="5aP-cK-Aka"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQl-Kp-xQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2105" y="461"/>
+            <point key="canvasLocation" x="2104.3478260869565" y="460.71428571428567"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EoA-dd-sWP">
@@ -196,4 +247,7 @@
             <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cr-img" width="1900" height="1270"/>
+    </resources>
 </document>
