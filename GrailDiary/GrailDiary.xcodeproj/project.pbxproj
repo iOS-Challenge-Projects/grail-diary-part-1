@@ -13,6 +13,10 @@
 		044F5CC123C89F2B001F1C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044F5CBF23C89F2B001F1C21 /* Main.storyboard */; };
 		044F5CC323C89F2E001F1C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044F5CC223C89F2E001F1C21 /* Assets.xcassets */; };
 		044F5CC623C89F2E001F1C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044F5CC423C89F2E001F1C21 /* LaunchScreen.storyboard */; };
+		046995CD23CC1B7900B89C1C /* POITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046995CC23CC1B7900B89C1C /* POITableViewCell.swift */; };
+		046995CF23CC1BAC00B89C1C /* AddPOIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046995CE23CC1BAC00B89C1C /* AddPOIViewController.swift */; };
+		046995D223CC1BCE00B89C1C /* POIDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046995D123CC1BCE00B89C1C /* POIDetailViewController.swift */; };
+		046995D423CC1D2400B89C1C /* POI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046995D323CC1D2400B89C1C /* POI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		044F5CC223C89F2E001F1C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044F5CC523C89F2E001F1C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044F5CC723C89F2E001F1C21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046995CC23CC1B7900B89C1C /* POITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POITableViewCell.swift; sourceTree = "<group>"; };
+		046995CE23CC1BAC00B89C1C /* AddPOIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPOIViewController.swift; sourceTree = "<group>"; };
+		046995D123CC1BCE00B89C1C /* POIDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIDetailViewController.swift; sourceTree = "<group>"; };
+		046995D323CC1D2400B89C1C /* POI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				044F5CB923C89F2B001F1C21 /* AppDelegate.swift */,
 				044F5CBB23C89F2B001F1C21 /* SceneDelegate.swift */,
-				044F5CBD23C89F2B001F1C21 /* POIsTableViewController.swift */,
+				046995D523CC1D2C00B89C1C /* Model */,
+				046995C723CC1B0000B89C1C /* Views */,
 				044F5CBF23C89F2B001F1C21 /* Main.storyboard */,
 				044F5CC223C89F2E001F1C21 /* Assets.xcassets */,
 				044F5CC423C89F2E001F1C21 /* LaunchScreen.storyboard */,
 				044F5CC723C89F2E001F1C21 /* Info.plist */,
 			);
 			path = GrailDiary;
+			sourceTree = "<group>";
+		};
+		046995C723CC1B0000B89C1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				044F5CBD23C89F2B001F1C21 /* POIsTableViewController.swift */,
+				046995CC23CC1B7900B89C1C /* POITableViewCell.swift */,
+				046995CE23CC1BAC00B89C1C /* AddPOIViewController.swift */,
+				046995D123CC1BCE00B89C1C /* POIDetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		046995D523CC1D2C00B89C1C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				046995D323CC1D2400B89C1C /* POI.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046995D423CC1D2400B89C1C /* POI.swift in Sources */,
+				046995CF23CC1BAC00B89C1C /* AddPOIViewController.swift in Sources */,
 				044F5CBE23C89F2B001F1C21 /* POIsTableViewController.swift in Sources */,
 				044F5CBA23C89F2B001F1C21 /* AppDelegate.swift in Sources */,
 				044F5CBC23C89F2B001F1C21 /* SceneDelegate.swift in Sources */,
+				046995D223CC1BCE00B89C1C /* POIDetailViewController.swift in Sources */,
+				046995CD23CC1B7900B89C1C /* POITableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

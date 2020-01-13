@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1IY-bx-HVA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P0d-Oa-PlX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -7,89 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Grail Diary-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="POIsTableViewController" customModule="GrailDiary" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Gc-jo-DPl">
-                                <rect key="frame" x="0.0" y="20" width="414" height="842"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POICell" rowHeight="60" id="aq8-Gh-0H1">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aq8-Gh-0H1" id="Eo6-Y6-eeO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ISn-S5-cDv">
-                                                    <rect key="frame" x="20" y="8.5" width="291" height="43"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKd-aC-YHG">
-                                                            <rect key="frame" x="0.0" y="0.0" width="68.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mki-va-m6D">
-                                                            <rect key="frame" x="0.0" y="22.5" width="61.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="# of clues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yN2-AS-FHh">
-                                                    <rect key="frame" x="319" y="20" width="75" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="yN2-AS-FHh" firstAttribute="centerY" secondItem="Eo6-Y6-eeO" secondAttribute="centerY" id="3JA-SZ-UcB"/>
-                                                <constraint firstItem="ISn-S5-cDv" firstAttribute="leading" secondItem="Eo6-Y6-eeO" secondAttribute="leadingMargin" id="AEz-Lo-ifC"/>
-                                                <constraint firstItem="ISn-S5-cDv" firstAttribute="centerY" secondItem="Eo6-Y6-eeO" secondAttribute="centerY" id="b5Z-9u-8wG"/>
-                                                <constraint firstItem="yN2-AS-FHh" firstAttribute="leading" relation="lessThanOrEqual" secondItem="ISn-S5-cDv" secondAttribute="trailing" constant="8" id="eg0-xv-TxF"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="yN2-AS-FHh" secondAttribute="trailing" id="s9v-Wf-IpE"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="FSb-Us-4Hm" kind="show" identifier="ShowPOIDetailSegue" id="nKe-xT-FxF"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Gc-jo-DPl" secondAttribute="bottom" id="ETD-5D-e34"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Gc-jo-DPl" secondAttribute="trailing" id="Vxo-0U-4fj"/>
-                            <constraint firstItem="7Gc-jo-DPl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="ifH-QD-2p2"/>
-                            <constraint firstItem="7Gc-jo-DPl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u2D-5Z-MYs"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Grail Diary" id="B3Y-0X-3v6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="fgZ-dn-nJr">
-                            <connections>
-                                <segue destination="nUX-b4-SQM" kind="presentation" identifier="AddPOIModalSegue" id="4oi-fU-5K2"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1050.7246376811595" y="138.61607142857142"/>
-        </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="ypD-pm-Srk">
             <objects>
-                <viewController id="FSb-Us-4Hm" sceneMemberID="viewController">
+                <viewController id="FSb-Us-4Hm" customClass="POIDetailViewController" customModule="GrailDiary" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6eY-7E-iUk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,15 +69,20 @@
                         <viewLayoutGuide key="safeArea" id="Gdz-4x-CK2"/>
                     </view>
                     <navigationItem key="navigationItem" id="5aP-cK-Aka"/>
+                    <connections>
+                        <outlet property="cluesLabel" destination="emi-gF-CxM" id="bRD-2U-FEk"/>
+                        <outlet property="countryLabel" destination="Pbd-dl-RaN" id="J7U-qd-Qhz"/>
+                        <outlet property="locationLabel" destination="w7c-If-ORj" id="iLd-1x-bwd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQl-Kp-xQ7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2104.3478260869565" y="460.71428571428567"/>
+            <point key="canvasLocation" x="3013.04347826087" y="460.71428571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--AddPOI View Controller-->
         <scene sceneID="EoA-dd-sWP">
             <objects>
-                <viewController id="nUX-b4-SQM" sceneMemberID="viewController">
+                <viewController id="nUX-b4-SQM" customClass="AddPOIViewController" customModule="GrailDiary" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwZ-kK-xwj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,9 +132,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fhy-aV-5b5">
                                 <rect key="frame" x="0.0" y="759" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem systemItem="cancel" id="9ud-Fw-w84"/>
+                                    <barButtonItem systemItem="cancel" id="9ud-Fw-w84">
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="nUX-b4-SQM" id="M6Z-Zn-bdD"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="KCg-f2-TuU"/>
-                                    <barButtonItem systemItem="save" id="7QM-Ox-6Fo"/>
+                                    <barButtonItem systemItem="save" id="7QM-Ox-6Fo">
+                                        <connections>
+                                            <action selector="saveTapped:" destination="nUX-b4-SQM" id="l5j-8z-m4A"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -223,28 +157,106 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R1r-LQ-7G3"/>
                     </view>
+                    <connections>
+                        <outlet property="clue1TextField" destination="ffb-cA-ag6" id="IX7-nM-6yr"/>
+                        <outlet property="clue2TextField" destination="rID-4j-MgR" id="Gu4-qL-hFz"/>
+                        <outlet property="clue3TextField" destination="qjR-uq-qTY" id="wfg-cp-jPE"/>
+                        <outlet property="countryTextField" destination="nFS-Vr-eYK" id="LKr-iS-Tc3"/>
+                        <outlet property="locationTextField" destination="tgc-5m-JSx" id="5LT-ph-WQu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="seX-Oh-8gn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2114" y="-235"/>
+            <point key="canvasLocation" x="3023.1884057971015" y="-235.04464285714283"/>
         </scene>
         <!--Grail Diary-->
-        <scene sceneID="bNC-iY-4zY">
+        <scene sceneID="LrR-gp-UfQ">
             <objects>
-                <navigationController title="Grail Diary" automaticallyAdjustsScrollViewInsets="NO" id="1IY-bx-HVA" sceneMemberID="viewController">
+                <viewController id="4P5-oL-kpC" customClass="POIsTableViewController" customModule="GrailDiary" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mce-0L-5IU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jws-t0-Zo8">
+                                <rect key="frame" x="20" y="44" width="374" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="testCell" id="roL-0c-ZzZ" customClass="POITableViewCell" customModule="GrailDiary">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="roL-0c-ZzZ" id="AgC-U0-CtT">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rol-i9-c2w">
+                                                    <rect key="frame" x="20" y="0.0" width="66" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYv-vo-POm">
+                                                    <rect key="frame" x="20" y="23" width="62" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L4g-7q-bsG">
+                                                    <rect key="frame" x="303" y="12" width="44" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cluesLabel" destination="L4g-7q-bsG" id="Yo9-1j-RG7"/>
+                                            <outlet property="countryLabel" destination="BYv-vo-POm" id="DG8-RD-wau"/>
+                                            <outlet property="locationLabel" destination="rol-i9-c2w" id="AWt-3l-AYG"/>
+                                            <segue destination="FSb-Us-4Hm" kind="show" identifier="ShowPOIDetailSegue" id="J97-gx-guu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oNc-pk-tEH"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Grail Diary" id="Dvn-h5-llu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sV8-UQ-NPN">
+                            <connections>
+                                <segue destination="nUX-b4-SQM" kind="presentation" identifier="AddPOIModalSegue" id="Bwt-sr-Y4e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="jws-t0-Zo8" id="XEA-JC-VmB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G8X-La-ORg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000.0000000000002" y="139.95535714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7mw-We-DTz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P0d-Oa-PlX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="7Ys-Ci-Iga">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="e8I-zV-hsW">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jZi-Sj-gVV"/>
+                        <segue destination="4P5-oL-kpC" kind="relationship" relationship="rootViewController" id="DWj-tH-4Zc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tjx-PX-72a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p0t-lN-QhF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1089.8550724637682" y="139.95535714285714"/>
         </scene>
     </scenes>
     <resources>
